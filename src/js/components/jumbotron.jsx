@@ -8,9 +8,12 @@ const Jumbotron = () => {
                 <p className="col-md-8 fs-4">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore facere distinctio voluptates quia officiis unde nobis neque veniam hic. Sequi totam laudantium, velit a quaerat deleniti blanditiis facere reiciendis cumque!           
                 </p>
+                <button className="btn btn-primary btn-lg" type="button">
+                    Call to action!                    
+                </button>
             </div>            
         </div>
-    )
-}
+    );
+};
 
 export default Jumbotron;
