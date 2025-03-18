@@ -3,7 +3,6 @@ import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
 import Footer from "./footer.jsx";
-//include images into your bundle
 
 const cards = [
 	{
@@ -28,21 +27,27 @@ const cards = [
 	}
 ];
 
-//create your first component
 const Home = () => {
 	return (
 		<div className="text-center">
-			<Navbar/>   
-			<Jumbotron/>
+			<Navbar/>
+			
+			{/* Envolver Jumbotron en un container para alinearlo */}
+			<div className="container">
+				<Jumbotron/>
+			</div>
+
+			{/* Sección de Cards */}
 			<div className="container">
 				<div className="row">
-					{cards.map((item,index) => (
-						<div className="col-12 col-sm6 col-md-4 col-lg-3 mb-4" key={index}>
+					{cards.map((item, index) => (
+						<div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
 							<Card cards={item} />							
 						</div>
 					))}					
 				</div>
 			</div>        
+
 			<Footer />
 		</div>
 	);
