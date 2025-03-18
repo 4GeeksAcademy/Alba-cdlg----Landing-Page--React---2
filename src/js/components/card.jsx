@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <div className="card h-100">
       <div className="card-img-top" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
-        <div style={{ height: '100%', width: '100%', display: 'flex' }}>
+        <div style={{ height: '100%', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           {image}
         </div>
       </div>
@@ -22,4 +22,5 @@ const Card = (props) => {
 };
 
 export default Card;
+
 
