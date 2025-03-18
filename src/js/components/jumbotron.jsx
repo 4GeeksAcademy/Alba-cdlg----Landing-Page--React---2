@@ -4,7 +4,7 @@ const Jumbotron = () => {
     return (
         <div className="container my-4">  {/* Agregamos container para alinearlo */}
             <div className="p-5 bg-light rounded shadow">
-                <h1 className="display-5 fw-bold">A Warm Welcome!</h1>
+                <h1 className="display-5">A Warm Welcome!</h1>
                 <p className="fs-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore facere distinctio voluptates quia officiis unde nobis neque veniam hic. Sequi totam laudantium, velit a quaerat deleniti blanditiis facere reiciendis cumque!           
                 </p>
